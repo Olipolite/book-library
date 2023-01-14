@@ -12,6 +12,7 @@ const setupDatabase = () => {
   });
 
   const Reader = ReaderModel(connection, Sequelize);
+  console.log(Reader, "models index");
 
   connection.sync({ alter: true });
   return {
